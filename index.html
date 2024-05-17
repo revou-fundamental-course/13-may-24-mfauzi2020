@@ -1,22 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Kalkulator Matematik </title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Kalkulator Matematik</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <!-- HEADER-->
     <haeder>
-
+      <section>
+        <div id="sambutan">
+          <h1>Selamat datang di KalBaDa</h1>
+          <p>
+            Hai, Guys selamat datang di Kalkulator Bangung Datar yang disebut
+            KalBaDa
+          </p>
+          <p>
+            sebuah aplikasi berbasis web sederhana yang memiliki fungsi untuk
+            menghitung nilai luas atau keliling suatu bangun datar.
+          </p>
+        </div>
+      </section>
     </haeder>
+    <!-- END HEADER -->
 
+    <!-- MAIN -->
     <main>
+      <!-- Bagian Konten-->
 
+      <section>
+        <div class="content">
+          <h2>Segitiga</h2>
+        </div>
+
+        <button type="button" id="switch-bd">Persegi Panjang</button>
+      </section>
+
+      <!-- Bagian Konten Rumus-->
+      <section class="container">
+        <!-- Section Luas-->
+        <section class="luas">
+          <div class="content">
+            <h3>Luas Segitiga</h3>
+          </div>
+
+          <div id="img-segitiga">
+            <img src="assets/rumus-segitiga.png" alt="segitiga" />
+          </div>
+
+          <div id="rumus-luas">
+            <p>Rumus luas segitiga yaitu :</p>
+            <p>
+              <center style="font-weight: bolder; font-size: 23px">
+                L = 1/2 x a x t
+              </center>
+            </p>
+            <p>Dimana :</p>
+            <p>L = Luas</p>
+            <p>a = Panjang Alas</p>
+            <p>t = Tinggi</p>
+          </div>
+          <br />
+          <hr />
+          <section>
+            <header>
+              <h1><center>Hitung Luas Segitiga</center></h1>
+            </header>
+            <form>
+              <div class="input-l">
+                <label><p>Alas Panjang</p></label>
+                <input type="text" />
+              </div>
+              <div class="input-t">
+                <label><p>Tinggi</p></label>
+                <input type="text" />
+              </div>
+            </form>
+          </section>
+        </section>
+        <!-- Section Luas-->
+
+        <!-- Section Keliling-->
+        <section class="keliling">
+          <div class="content">
+            <h3>Keliling Segitiga</h3>
+          </div>
+
+          <div id="img-segitiga">
+            <img src="assets/rumus-segitiga.png" alt="segitiga" />
+          </div>
+          <div id="rumus-keliling">
+            <p>Rumus keliling segitiga yaitu :</p>
+            <p>
+              <center style="font-weight: bolder; font-size: 23px">
+                L = K1 + K2 + K3
+              </center>
+            </p>
+            <p>Di mana :</p>
+            <p>K = Keliling</p>
+            <p>K1 = Sisi A</p>
+            <p>K2 = Sisi B</p>
+            <p>K3 = Sisi C</p>
+          </div>
+          <hr />
+
+          <section>
+            <header>
+              <h1><center>Hitung Keliling Segitiga</center></h1>
+            </header>
+            <form>
+              <div class="input-k">
+                <label><p>K1</p></label>
+                <input type="text" />
+              </div>
+              <div class="input-k">
+                <label><p>K2</p></label>
+                <input type="text" />
+              </div>
+              <div class="input-k">
+                <label><p>K3</p></label>
+                <input type="text" />
+              </div>
+            </form>
+          </section>
+        </section>
+        <!-- End Section keliling-->
+      </section>
+
+      <!-- End Konten Rumus-->
+
+      <!-- End Konten-->
     </main>
-    
-    <footer>
 
+    <!-- MAIN -->
+
+    <!-- FOOTER -->
+    <footer>
+      <script src="js/script.js"></script>
     </footer>
-    
-</body>
+    <!-- FOOTER -->
+  </body>
 </html>
