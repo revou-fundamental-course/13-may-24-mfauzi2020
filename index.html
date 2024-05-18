@@ -17,7 +17,7 @@
             KalBaDa
           </p>
           <p>
-            sebuah aplikasi berbasis web sederhana yang memiliki fungsi untuk
+            Sebuah aplikasi berbasis web sederhana yang memiliki fungsi untuk
             menghitung nilai luas atau keliling suatu bangun datar.
           </p>
         </div>
@@ -46,7 +46,7 @@
           </div>
 
           <div id="img-segitiga">
-            <img src="assets/rumus-segitiga.png" alt="segitiga" />
+            <img src="assets/gambar_rumus_luas.jpg" alt="segitiga" />
           </div>
 
           <div id="rumus-luas">
@@ -67,16 +67,44 @@
             <header>
               <h1><center>Hitung Luas Segitiga</center></h1>
             </header>
-            <form>
+
+            <form action="" method="post" autocomplete="off">
               <div class="input-l">
-                <label><p>Alas Panjang</p></label>
-                <input type="text" />
+                <label for="alas">Alas Panjang </label>
+                <br /><br />
+                <input
+                  type="number"
+                  id="alas"
+                  name="alas"
+                  maxlength="3"
+                  placeholder="Masukkan nilai"
+                  required
+                />
               </div>
               <div class="input-t">
-                <label><p>Tinggi</p></label>
-                <input type="text" />
+                <label for="tinggi"> Tinggi </label>
+                <br /><br />
+                <input
+                  type="number"
+                  id="tinggi"
+                  name="tinggi"
+                  required
+                  placeholder="Masukkan nilai"
+                />
               </div>
             </form>
+
+            <p style="font-size: 25px">Luas Segitiga Adalah :</p>
+
+            <div id="output"></div>
+
+            <div class="btn-hitung">
+              <button onclick="iniKosong()" id="hitung">Hitung</button>
+            </div>
+
+            <div class="btn-reset">
+              <button type="reset" onclick="reset_luas()">Reset</button>
+            </div>
           </section>
         </section>
         <!-- Section Luas-->
@@ -88,20 +116,20 @@
           </div>
 
           <div id="img-segitiga">
-            <img src="assets/rumus-segitiga.png" alt="segitiga" />
+            <img src="assets/gambar_rumus_keliling.jpg" alt="segitiga" />
           </div>
           <div id="rumus-keliling">
             <p>Rumus keliling segitiga yaitu :</p>
             <p>
               <center style="font-weight: bolder; font-size: 23px">
-                L = K1 + K2 + K3
+                L = S1 + S2 + S3
               </center>
             </p>
             <p>Di mana :</p>
-            <p>K = Keliling</p>
-            <p>K1 = Sisi A</p>
-            <p>K2 = Sisi B</p>
-            <p>K3 = Sisi C</p>
+            <p>S = Sisi</p>
+            <p>SA = Sisi A</p>
+            <p>SB = Sisi B</p>
+            <p>SC = Sisi C</p>
           </div>
           <hr />
 
@@ -109,20 +137,51 @@
             <header>
               <h1><center>Hitung Keliling Segitiga</center></h1>
             </header>
-            <form>
-              <div class="input-k">
-                <label><p>K1</p></label>
-                <input type="text" />
-              </div>
-              <div class="input-k">
-                <label><p>K2</p></label>
-                <input type="text" />
-              </div>
-              <div class="input-k">
-                <label><p>K3</p></label>
-                <input type="text" />
-              </div>
-            </form>
+
+            <div class="input-k">
+              <p>Sisi A</p>
+              <input
+                type="number"
+                id="s1"
+                placeholder="Masukkan nilai"
+                required
+              />
+            </div>
+            <div class="input-k">
+              <p>Sisi B</p>
+              <input
+                type="number"
+                id="s2"
+                placeholder="Masukkan nilai"
+                required
+              />
+            </div>
+            <div class="input-k">
+              <p>Sisi C</p>
+              <input
+                type="number"
+                id="s3"
+                placeholder="Masukkan nilai"
+                required
+              />
+            </div>
+
+            <p style="font-size: 25px">Keliling Segitiga Adalah :</p>
+
+            <div id="hasil"></div>
+
+            <!--<div class="btn-hitung">
+              <button onclick="segitiga()">Hitung</button>
+            </div> 
+          -->
+
+            <div class="btn-hitung">
+              <button onclick="keliling()">Hitung</button>
+            </div>
+
+            <div class="btn-reset">
+              <button type="reset" onclick="reset_keliling()">Reset</button>
+            </div>
           </section>
         </section>
         <!-- End Section keliling-->
@@ -132,13 +191,13 @@
 
       <!-- End Konten-->
     </main>
-
-    <!-- MAIN -->
+    <!-- End Main -->
 
     <!-- FOOTER -->
     <footer>
+      &copy; 2024, RevoU Mini Project
       <script src="js/script.js"></script>
     </footer>
-    <!-- FOOTER -->
+    <!-- End Footer -->
   </body>
 </html>
