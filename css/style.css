@@ -8,7 +8,7 @@ main {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-/* Bagian Header */
+/* CSS Bagian Header */
 h1 {
   font-size: 50px;
 }
@@ -32,7 +32,7 @@ h3 {
 
 /* End Header */
 
-/* Bagian Content */
+/* CSS Bagian Content */
 .content h2 {
   background-color: hsl(162, 88%, 34%);
   padding: 15px;
@@ -120,7 +120,7 @@ button:hover {
 
 /* End Content */
 
-/* Hitung Content */
+/* CSS Form dan Button Content */
 
 label {
   font-size: 20px;
@@ -203,7 +203,7 @@ input {
   padding: 10px;
 }
 
-/* End Hitung Content */
+/* End Form dan Button Content */
 
 /* CSS Invalid */
 input:invalid {

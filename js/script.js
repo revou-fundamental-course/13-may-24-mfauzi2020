@@ -1,4 +1,4 @@
-// Java Script hitung Luas Segitiga --------------
+// ================== Java Script Luas Segitiga ==============//
 
 const alas = document.getElementById("alas");
 const tinggi = document.getElementById("tinggi");
@@ -11,7 +11,7 @@ hitung.addEventListener("click", function () {
   output.innerHTML = `Luas Segitiga dari alas ${a} cm dan tinggi ${t} cm adalah ${l} cm2`;
 });
 
-// Validasi Luas
+// Validasi Form Luas Segitiga
 function iniKosong() {
   if (document.getElementById("alas", "tinggi").value == "") {
     alert("Tidak Boleh Kosong !");
@@ -28,7 +28,7 @@ function reset_luas() {
 
 // End Java Script Hitung Luas Segitiga -------------
 
-// Java Script hitung Keliling Segitiga -----------
+//=======================Java Script Keliling Segitiga ==============================//
 function keliling() {
   let s1 = document.getElementById("s1").value;
   let s2 = document.getElementById("s2").value;
@@ -37,17 +37,17 @@ function keliling() {
   let hasil = document.getElementById("hasil");
   hasil.innerHTML = `Hasil dari seluruh sisi atau keliling segitiga adalah ${jumlah} cm2`;
 
-  // Validasi Keliling
+  // Validasi Form Keliling
   if (document.getElementById("s1", "s2", "s3").value == "") {
     alert("Tidak Boleh Kosong !");
   }
   return;
 }
+// Reset Keliling
 function reset_keliling() {
   document.getElementById("s1").value = "";
   document.getElementById("s2").value = "";
   document.getElementById("s3").value = "";
-  document.getElementById("hasil");
 }
 
 // End Java Script Hitung Keliling Segitiga -----------

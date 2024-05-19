@@ -28,7 +28,6 @@
     <!-- MAIN -->
     <main>
       <!-- Bagian Konten-->
-
       <section>
         <div class="content">
           <h2>Segitiga</h2>
@@ -138,42 +137,38 @@
               <h1><center>Hitung Keliling Segitiga</center></h1>
             </header>
 
-            <div class="input-k">
-              <p>Sisi A</p>
-              <input
-                type="number"
-                id="s1"
-                placeholder="Masukkan nilai"
-                required
-              />
-            </div>
-            <div class="input-k">
-              <p>Sisi B</p>
-              <input
-                type="number"
-                id="s2"
-                placeholder="Masukkan nilai"
-                required
-              />
-            </div>
-            <div class="input-k">
-              <p>Sisi C</p>
-              <input
-                type="number"
-                id="s3"
-                placeholder="Masukkan nilai"
-                required
-              />
-            </div>
-
+            <form>
+              <div class="input-k">
+                <p>Sisi A</p>
+                <input
+                  type="number"
+                  id="s1"
+                  placeholder="Masukkan nilai"
+                  required
+                />
+              </div>
+              <div class="input-k">
+                <p>Sisi B</p>
+                <input
+                  type="number"
+                  id="s2"
+                  placeholder="Masukkan nilai"
+                  required
+                />
+              </div>
+              <div class="input-k">
+                <p>Sisi C</p>
+                <input
+                  type="number"
+                  id="s3"
+                  placeholder="Masukkan nilai"
+                  required
+                />
+              </div>
+            </form>
             <p style="font-size: 25px">Keliling Segitiga Adalah :</p>
 
             <div id="hasil"></div>
-
-            <!--<div class="btn-hitung">
-              <button onclick="segitiga()">Hitung</button>
-            </div> 
-          -->
 
             <div class="btn-hitung">
               <button onclick="keliling()">Hitung</button>
