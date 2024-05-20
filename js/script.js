@@ -39,7 +39,7 @@ function keliling() {
 
   // Validasi Form Keliling
   if (document.getElementById("s1", "s2", "s3").value == "") {
-    alert("Masukkan nilai di field, Jangan Sampai Kosong !");
+    alert("Masukkan nilai di field, Jangan Kosong !");
   }
   return;
 }

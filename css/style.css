@@ -67,8 +67,6 @@ button:hover {
   text-align: center;
 }
 
-
-
 @media screen and (max-width: 680px) {
   .container {
     display: flex;
@@ -113,7 +111,6 @@ button:hover {
   box-sizing: border-box;
   border-radius: 10px;
   width: 100%;
-  height: auto;
 }
 
 .keliling {
@@ -128,7 +125,6 @@ button:hover {
   width: 100%;
   box-sizing: border-box;
   border-radius: 10px;
-  height: auto;
 }
 
 #rumus-luas {
