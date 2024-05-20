@@ -45,7 +45,11 @@
           </div>
 
           <div id="img-segitiga">
-            <img src="assets/gambar_rumus_luas.jpg" alt="segitiga" />
+            <img
+              src="assets/gambar_rumus_luas.jpg"
+              alt="segitiga"
+              style="width: 100%"
+            />
           </div>
 
           <div id="rumus-luas">
@@ -97,12 +101,14 @@
 
             <div id="output"></div>
 
-            <div class="btn-hitung">
-              <button onclick="iniKosong()" id="hitung">Hitung</button>
-            </div>
+            <div class="btn">
+              <div class="btn-hitung">
+                <button onclick="iniKosong()" id="hitung">Hitung</button>
+              </div>
 
-            <div class="btn-reset">
-              <button type="reset" onclick="reset_luas()">Reset</button>
+              <div class="btn-reset">
+                <button type="reset" onclick="reset_luas()">Reset</button>
+              </div>
             </div>
           </section>
         </section>
@@ -115,7 +121,11 @@
           </div>
 
           <div id="img-segitiga">
-            <img src="assets/gambar_rumus_keliling.jpg" alt="segitiga" />
+            <img
+              src="assets/gambar_rumus_keliling.jpg"
+              alt="segitiga"
+              style="width: 100%"
+            />
           </div>
           <div id="rumus-keliling">
             <p>Rumus keliling segitiga yaitu :</p>
@@ -168,14 +178,16 @@
             </form>
             <p style="font-size: 25px">Keliling Segitiga Adalah :</p>
 
-            <div id="hasil"></div>
+            <div id="hasil" onclick="reset_keliling()"></div>
 
-            <div class="btn-hitung">
-              <button onclick="keliling()">Hitung</button>
-            </div>
+            <div class="btn">
+              <div class="btn-hitung">
+                <button onclick="keliling()">Hitung</button>
+              </div>
 
-            <div class="btn-reset">
-              <button type="reset" onclick="reset_keliling()">Reset</button>
+              <div class="btn-reset">
+                <button type="reset" onclick="reset_keliling()">Reset</button>
+              </div>
             </div>
           </section>
         </section>

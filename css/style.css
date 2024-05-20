@@ -67,6 +67,32 @@ button:hover {
   text-align: center;
 }
 
+
+
+@media screen and (max-width: 680px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .luas {
+    flex: 1;
+  }
+
+  .keliling {
+    flex: 1;
+  }
+
+  #sambutan {
+    width: 100%;
+  }
+
+  .btn-hitung {
+    margin-right: 20px;
+  }
+}
+
 .container {
   display: flex;
   justify-content: space-evenly;
@@ -97,11 +123,12 @@ button:hover {
   margin-right: 20px;
   margin-top: 20px;
   background-color: rgba(100, 98, 98, 0.3);
-  box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.3);
   transition: 0.3s;
   width: 100%;
-
+  box-sizing: border-box;
   border-radius: 10px;
+  height: auto;
 }
 
 #rumus-luas {
@@ -146,15 +173,25 @@ input {
   text-align: center;
 }
 
+.btn {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-hitung {
+  flex: 0.5;
+  margin-top: 30px;
+}
+
 .btn-hitung button {
   background-color: #2e80fc;
-  margin: 50px;
+  margin-bottom: 20px;
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 10px;
   color: white;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-size: 17px;
+  font-size: 20px;
 }
 
 .btn-hitung button:hover {
@@ -163,18 +200,14 @@ input {
   color: rgb(32, 32, 32);
 }
 
-.btn-hitung {
-  text-align: center;
-}
-
 .btn-reset button {
   background-color: rgb(255, 162, 41);
   color: white;
   font-size: 20px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  padding: 10px;
-  border-radius: 5px;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .btn-reset button:hover {
@@ -184,9 +217,9 @@ input {
 }
 
 .btn-reset {
-  text-align: right;
-  padding-right: 20px;
-  padding-bottom: 10px;
+  padding: 3px;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 #hasil {
@@ -216,6 +249,7 @@ input:invalid {
 
 /* CSS Footer */
 footer {
+  width: auto 100%;
   padding: 20px;
   margin-top: 50px;
   color: white;
