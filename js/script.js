@@ -24,6 +24,11 @@ function reset_luas() {
   document.getElementById("alas").value = "";
   document.getElementById("tinggi").value = "";
   document.getElementById("output").value = "";
+
+  if ((document.getElementById("output").value = ""));
+  {
+    output.innerText = "";
+  }
 }
 
 // End Java Script Hitung Luas Segitiga -------------
@@ -38,7 +43,7 @@ function keliling() {
   hasil.innerHTML = `Hasil dari seluruh sisi atau keliling segitiga adalah ${jumlah} cm2`;
 
   // Validasi Form Keliling
-  if (document.getElementById("s1", "s2", "s3", "hasil").value == "") {
+  if (document.getElementById("s1", "s2", "s3").value == "") {
     alert("Masukkan nilai di field, Jangan Kosong !");
   }
   return;
@@ -48,6 +53,11 @@ function reset_keliling() {
   document.getElementById("s1").value = "";
   document.getElementById("s2").value = "";
   document.getElementById("s3").value = "";
+
+  if ((document.getElementById("hasil").value = ""));
+  {
+    hasil.innerText = "";
+  }
 }
 
 // End Java Script Hitung Keliling Segitiga -----------
