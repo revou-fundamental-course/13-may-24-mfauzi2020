@@ -64,7 +64,7 @@ button:hover {
 }
 
 #img-segitiga {
-  text-align: center;
+  width: 100%;
 }
 
 @media screen and (max-width: 680px) {
