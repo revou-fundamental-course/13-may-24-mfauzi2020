@@ -11,7 +11,7 @@ hitung.addEventListener("click", function () {
   output.innerHTML = `Luas Segitiga dari alas ${a} cm dan tinggi ${t} cm adalah ${l} cm2`;
 });
 
-// Validasi Form Luas Segitiga
+// Validate Form Luas Segitiga
 function iniKosong() {
   if (document.getElementById("alas", "tinggi").value == "") {
     alert("Tidak Boleh Kosong !");
